@@ -1,5 +1,11 @@
 package com.dist.javalock;
 
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  *
  * juc 中也包含了 大量的原子类
@@ -54,6 +60,14 @@ public class Test2 {
 */
 
 
+    }
+    @Test
+    public  void  test()  {
+        List<String> list =new LinkedList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.forEach(System.out::println);
     }
 
 }
